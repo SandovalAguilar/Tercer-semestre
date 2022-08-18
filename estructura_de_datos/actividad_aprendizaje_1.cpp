@@ -11,7 +11,7 @@ en memoria.
 
 // Libreria para operaciones de entrada y salida
 #include <iostream>
-// Abreación de las funciones
+// Abreviación de las funciones
 using namespace std;
 
 // Declaración de la función principal
@@ -51,4 +51,5 @@ int main()
     // Finalización del programa
     return 0;
 }
+
 
