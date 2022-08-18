@@ -9,9 +9,9 @@
         ""
       ],
       "stopAtEntry": false,
-      "cwd": "/workspace/tercer_semestre",
+      "cwd": "/workspace/tercer_semestre/estructura_de_datos",
       "environment": [],
-      "program": "/workspace/tercer_semestre/build/Debug/outDebug",
+      "program": "/workspace/tercer_semestre/estructura_de_datos/build/Release/outRelease",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
       "miDebuggerPath": "/usr/bin/gdb",
