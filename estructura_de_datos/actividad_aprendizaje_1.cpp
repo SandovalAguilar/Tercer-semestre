@@ -9,15 +9,15 @@ en memoria.
 
 */ 
 
-// Librerias necesarias 
+// Libreria para operaciones de entrada y salida
 #include <iostream>
-#include <new>
+// Abreviación de las funciones
 using namespace std;
 
 // Declaración de la función principal
 int main()
 {
-    // Asignación de variables
+    // Asignación de variables estáticas 
     int n = 0;
     int i = 0;
 
@@ -26,11 +26,12 @@ int main()
     cin >> n; 
 
     // Declaración del puntero "arreglo" en memoria dinámica
-    int *arreglo = new int[n];
+    int* arreglo = new int[n];
 
     // Itera "n" veces e incrementa de 10 en 10
     for (i = 0; i < n; i++) 
     {
+        // Dado un índice, asigna el valor siguiente
         arreglo[i] = (i + 1) * 10;
     }
 
@@ -41,11 +42,14 @@ int main()
         cout << arreglo[i] << " ";
     }
 
+    // Salto del línea
     cout << endl;
 
     // Libera el espacio en memoria dinámica
     delete[] arreglo;
 
+    // Finalización del programa
     return 0;
 }
+
 
