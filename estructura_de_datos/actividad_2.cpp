@@ -1,5 +1,7 @@
 /*
-Actividad 2
+Ismael Sandoval Aguilar (2022).
+
+Actividad 2.
 
 Desarrollar un programa utilizando listas simplemente enlazadas
 donde se pueda insertar elementos solo al final de la lista, 
@@ -37,10 +39,13 @@ void mostrar_menu()
     cout << "\n\tIngrese una opcion: (1-4): ";
 }
 
+// Funcion que muestra en la terminal la informacion de la lista.
 void despliega_lista(Nodo* apuntador)
 {
+    // Creo que su nombre es bastante autodescriptivo.
     int contador = 1;
 
+    // Mientras el apuntador auxiliar no sea nulo, recorre la lista.
     while (apuntador != NULL)
     {
         cout<<"\n\tDatos del alumno ["<<contador<<"] ";
@@ -54,21 +59,22 @@ void despliega_lista(Nodo* apuntador)
     }
 }
 
+// Esta funcion inserta un nuevo nodo al final de la lista.
 void insertar_elemento(Nodo** cabecera)
 {
     // 1. Creamos un nuevo nodo.
     Nodo* nuevo_nodo = new Nodo();
 
     // Puntero temporal.
-    Nodo* temporal = *cabecera;
+    Nodo* pTemporal = *cabecera;
     
     // 2. Asignamos informacion dentro del nodo.
     // El usuario ingresa la informacion.
-    cout << "Ingrese la matricula del alumno:" << endl;
+    cout << "\n\n\tIngrese la matricula del alumno:";
     cin.ignore(); cin >> nuevo_nodo -> matricula;
-    cout << "Ingrese el nombre del alumno:" << endl;
+    cout << "\n\n\tIngrese el nombre del alumno:";
     cin.ignore(); cin.getline(nuevo_nodo -> nombre, max_char); 
-    cout << "Ingrese el promedio del alumno:" << endl;
+    cout << "\n\n\tIngrese el promedio del alumno:";
     cin.ignore(); cin >> nuevo_nodo -> promedio;
     
     // 3. Asignamos NULL al siguiente nodo.
@@ -79,20 +85,63 @@ void insertar_elemento(Nodo** cabecera)
     {
         *cabecera = nuevo_nodo;
         return;
-    } else {
+    } 
+    else 
+    {
         // 5. Si no, recorre la lista hasta el ultimo nodo.
-        while (temporal -> siguiente != NULL)
+        while (pTemporal -> siguiente != NULL)
         {
-            temporal = temporal -> siguiente;
+            pTemporal = pTemporal -> siguiente;
         }
         // 6. Cambiamos el siguiente nodo al ultimo nodo.
-        temporal -> siguiente = nuevo_nodo;
+        pTemporal -> siguiente = nuevo_nodo;
     }    
 }
 
-void eliminar_elemento()
+// Elimina un elemento de la lista; en este caso, dado un nombre.
+void eliminar_elemento(Nodo* &cabecera)
 {
-    cout << "test";
+    // Creamos una variable dinamica temporal para almacenar el nombre a buscar.
+    long int matricula_temporal;
+    // Almacena temporalmente la direccion del nodo.
+    Nodo* pTemporal;
+    // Compara nodos; sera util al iterar. 
+    Nodo* pComparador;
+    // El puntero ahora empieza desde la cabecera.
+    pComparador = cabecera;
+
+    cout << "\n\n\n\t Eliminar un paciente";
+    cout << "\n\n\t Ingrese la matricula del alumno: ";
+    cin >> matricula_temporal;
+
+    // Mientras el puntero no sea nulo, itera.
+    while (pComparador != NULL)
+    {
+        // Compara el campo "nombre" del nodo con el nombre temporal.
+        if (pComparador -> matricula == matricula_temporal)
+        {
+            if (pComparador == cabecera)
+            {
+                cabecera = cabecera -> siguiente;
+            }
+            else
+            {
+                pTemporal -> siguiente = pComparador -> siguiente;
+            }
+            delete(pComparador);
+            cout << "\n\n\t[Registro eliminado]\n";
+            return;
+        }
+        else
+        {
+            pTemporal = pComparador;
+            pComparador = pComparador -> siguiente;
+        }
+    }
+    if (pComparador == NULL)
+    {
+        cout << "\n\t[Codigo incorrecto]\n";
+    }   
 }
 
 // Funcion principal del programa
@@ -105,7 +154,6 @@ int main()
     // Declaramos una lista enlazada vacia.
     Nodo* cabecera = NULL;
 
-    // Menu de opciones.
     do
     {
         // Limpia la terminal.
@@ -122,7 +170,7 @@ int main()
                 insertar_elemento(&cabecera);
                 break;
             case 2:
-                eliminar_elemento();
+                eliminar_elemento(cabecera);
                 break;
             case 3:
                 despliega_lista(cabecera);
