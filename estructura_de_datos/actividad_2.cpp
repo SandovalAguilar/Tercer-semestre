@@ -15,9 +15,8 @@ y promedio general.
 #include <iostream>
 using namespace std;
 
-// Declaramos las constantes que limitaran el tamaño de los nombres y matriculas.
+// Declaramos las constantes que limitaran el tamaño de los nombres.
 const int max_char = 50;
-const int max_int = 6;
 
 // Declaramos la estructura del nodo.
 struct Nodo
@@ -110,7 +109,6 @@ void eliminar_elemento(Nodo* &cabecera)
     // El puntero ahora empieza desde la cabecera.
     pComparador = cabecera;
 
-    cout << "\n\n\n\t Eliminar un paciente";
     cout << "\n\n\t Ingrese la matricula del alumno: ";
     cin >> matricula_temporal;
 
@@ -119,25 +117,30 @@ void eliminar_elemento(Nodo* &cabecera)
     {
         // Compara el campo "nombre" del nodo con el nombre temporal.
         if (pComparador -> matricula == matricula_temporal)
-        {
+        {   
+            // Si el nodo auxiliar es igual a la cabecera, esta toma la direccion siguiente. 
             if (pComparador == cabecera)
             {
                 cabecera = cabecera -> siguiente;
             }
             else
+            // El puntero temporal almacena el siguiente nodo.
             {
                 pTemporal -> siguiente = pComparador -> siguiente;
             }
+            // Se elimina el nodo auxiliar. 
             delete(pComparador);
             cout << "\n\n\t[Registro eliminado]\n";
             return;
         }
         else
+        // Si no se encuentra ningun nombre, el puntero auxiliar avanza al siguiente nodo.
         {
             pTemporal = pComparador;
             pComparador = pComparador -> siguiente;
         }
     }
+    // Si el puntero es nulo, el codigo es incorrecto.
     if (pComparador == NULL)
     {
         cout << "\n\t[Codigo incorrecto]\n";
@@ -156,9 +159,6 @@ int main()
 
     do
     {
-        // Limpia la terminal.
-        //system("clear");
-
         mostrar_menu();
 
         cin >> opcion_ingresada;
