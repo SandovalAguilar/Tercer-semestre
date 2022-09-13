@@ -1,18 +1,18 @@
 // programa que apila y muestra en pantalla
 #include<iostream>
-#include<conio.h>
+//#include<conio.h>
 using namespace std;
 
 struct nodo
 { 
-	int nro; // campo de información
+	int nro; // campo de informaciï¿½n
     struct nodo *sgte; // campo liga
 	};
 
 typedef nodo *Pila; // apuntador a nodo cabecera
 
 
-//Función para insertar elementos en la pila *****************
+//Funciï¿½n para insertar elementos en la pila *****************
 void push(Pila &p, int n)
 	{ 
 		Pila q=new(struct nodo);
@@ -23,7 +23,7 @@ void push(Pila &p, int n)
 	}
 
 
-//Función para visualizar elementos en la pila ***************
+//Funciï¿½n para visualizar elementos en la pila ***************
 void imprimir(Pila p1)
 	{ 
 		while(p1!=NULL)
@@ -34,7 +34,7 @@ void imprimir(Pila p1)
 	cout<<endl;
 	}	
 
-// Función principal *****************************************
+// Funciï¿½n principal *****************************************
 int main(void)
 { 
 	Pila p1=NULL;
@@ -55,7 +55,7 @@ int main(void)
  		{
 		 	case 1: 
 				system("cls");
- 				cout<<endl<<"Ingrese tamaño de la pila: "; 
+ 				cout<<endl<<"Ingrese tamaï¿½o de la pila: "; 
 				cin>>n;
            		cout<<endl<<"Ingresar datos..."<<endl;
            		for(i=0;i<n;i++)
