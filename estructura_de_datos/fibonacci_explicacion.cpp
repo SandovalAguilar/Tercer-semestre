@@ -21,16 +21,16 @@ int fibonacci(int a, int b, int n)
 
 /*
 
-** n = 3
+** n_0 = 3
 ** a = 1, b = 0, n = 2
 
 int fibonacci(int 1, int 0, int 2)
 { 
 	if (2) 
 	{		
-		int c = 1 + 0;	
+		int c = 0 + 1;	
 		cout << 1 << " ";	
-		return 0 + fibonacci(0, 1, 2-1);
+		return 0 + fibonacci(0, 1, 2-1); // 0
 	
 	} else {
 	    return 1;	
@@ -47,10 +47,10 @@ int fibonacci(int 0, int 1, int 1)
 	{		
 		int c = 0 + 1;	
 		cout << 1 << " ";	
-		return 1 + fibonacci(1, 1, 1-1);
+		return 1 + fibonacci(1, 1, 1-1); // 0 + 1
 	
 	} else {
-	    return 1;	
+	    return 1; 	
 	}
 }
 
@@ -62,12 +62,10 @@ int fibonacci(int 1, int 1, int 0)
 { 
 	if (0) 
 	{		
-		int c = 1 + 1;	
-		cout << 2 << " ";	
-		return 1 + fibonacci(1, 1, 1-1);
-	
+		////
+		////
 	} else {
-	    return 1;	
+	    return 1; // 0 + 1 + 1 	// Retorna todos los valores acumulados mas 1
 	}
 }
 
