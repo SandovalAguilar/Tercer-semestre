@@ -5,13 +5,34 @@ Prof. Jose Luis Candelario Tovar
 27 de octubre de 2022
 '''
 
+from pyrsistent import s
 import requests 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup as bs
+import json
+import re
+import pandas as pd
 
 URl = "https://www.misprofesores.com/escuelas/UANL-FCFM_2263"
-html_doc = requests.get(URl)
-soup = BeautifulSoup(html_doc, 'html.parser')
+page = requests.get(URl, verify = False)
+
+soup = bs(page.content, "html.parser")
+raw_json = soup.find_all('script', type = 'text/javascript')
+str_json = "[" + re.search(r'{"i.*":\s*"(.*?)"}', str(raw_json)).group() + "]"
+
+str_to_json = json.loads(str_json)
+df = pd.json_normalize(str_to_json)
+
+print(df)
+
+#print(str_array)
 
 
-soup.find_all('var dataSet')
-
+#[
+# {
+#   "i":"82556",
+#   "n":"Azucena Alejandra",
+#   "a":"Aceves Al\u00f3s",
+#   "d":"UANL - FCFM (Actuar\u00eda)",
+#   "m":"21","c":"8.6190"},
+#   }
+#]
