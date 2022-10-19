@@ -5,10 +5,10 @@ Prof. Jose Luis Candelario Tovar
 27 de octubre de 2022
 '''
 
-import requests 
+def main():
+    pass
 
-URl = "https://www.misprofesores.com/escuelas/UANL-FCFM_2263"
-page = requests.get(URl)
+if __name__ == "__main__":
+    main()
 
-print(page.text)
-
+    
