@@ -5,7 +5,6 @@ Prof. Jose Luis Candelario Tovar
 27 de octubre de 2022
 '''
 
-from pyrsistent import s
 import requests 
 from bs4 import BeautifulSoup as bs
 import json
