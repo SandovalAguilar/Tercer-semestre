@@ -35,6 +35,3 @@ def to_dataframe():
     return df
 
 
-if __name__ == "__to_dataframe__":
-    to_dataframe()
-

@@ -1,8 +1,5 @@
 '''
-Ismael Sandoval Aguilar - 2086210
-Programacion Orientada a Objetos - 031 A2022
-Prof. Jose Luis Candelario Tovar
-27 de octubre de 2022
+file -- data_analyzer.py -- 
 '''
 
 #Librerias y modulos necesarios
@@ -18,6 +15,17 @@ class table():
         self.table = table
         self.URL_source = URL_source
 
+class results():
+
+    def __init__(self, min_table, max_table):
+        self.min_table = min_table
+        self.max_table = max_table
+
+    def display_all(self):
+        print(self.min_table)
+        print('\n')
+        print(self.max_table)
+
 #Programa principal
 def data_analyzer():
     URL_site = "https://www.misprofesores.com/escuelas/UANL-FCFM_2263"
@@ -32,7 +40,7 @@ def data_analyzer():
         'c' : 'Promedio'
     }
 
-    df = df.rename(columns = new_names)
+    df = df.table.rename(columns = new_names)
 
     new_types = {
         'ID' : 'int',
@@ -44,6 +52,8 @@ def data_analyzer():
 
     null_values = df.loc[df["Promedio"].isnull()]
     df = df.dropna()
+
+    df['Razon'] = df['# de calif.'] / df['Promedio']
 
     resultados_max = df.loc[
         (df["Promedio"] > df["Promedio"].mean()) & 
@@ -61,7 +71,6 @@ def data_analyzer():
     resultados_min = resultados_min.sort_values(by = "Razon", ascending = False).reset_index(drop = True).head(10)
     resultados_min = resultados_min.sort_values(by = 'Promedio')
 
-    print(df.table)
-
-if __name__ == "__data_analyzer__":
-    data_analyzer()
+    final_results = results(resultados_min, resultados_max)
+    
+    return final_results
