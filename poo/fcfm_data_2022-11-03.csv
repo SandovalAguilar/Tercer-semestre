@@ -10,12 +10,12 @@
 8,152967,Andrés,Alberto Avilés Alvarado,Facultad de Ciencias Físico Mátematicas,2,9.0,0.2222222222222222
 9,152742,Andres,Alberto Aviles Alvarado,FCFM,1,4.0,0.25
 10,72244,Aralicia,Alcorta,Matemáticas,6,8.1667,0.7346908788127395
-12,97485,Francisco,Aldave Rivas,FCFM/ACTUARÍA,1,2.0,0.5
-13,96638,Juan Fco.,Aldave Rivas,FCFM,7,6.7143,1.0425509732958016
+12,96638,Juan Fco.,Aldave Rivas,FCFM,7,6.7143,1.0425509732958016
+13,97485,Francisco,Aldave Rivas,FCFM/ACTUARÍA,1,2.0,0.5
 14,132302,Julio Guadalupe,Aleman Reyes,FCFM,2,7.5,0.26666666666666666
-15,58950,Carlos,Almaguer,Actuaría,20,9.2,2.173913043478261
-16,59094,David,Almaguer,POO,3,9.3333,0.321429719391855
-17,108245,Francisco,Almaguer,Actuaria,15,6.6,2.272727272727273
+15,59094,David,Almaguer,POO,3,9.3333,0.321429719391855
+16,108245,Francisco,Almaguer,Actuaria,15,6.6,2.272727272727273
+17,58950,Carlos,Almaguer,Actuaría,20,9.2,2.173913043478261
 19,151849,Josue Caleb,Almaraz Puente,FCFM/ LCC,5,4.4,1.1363636363636362
 20,101913,Estela,Alvarado,NUEVO LEÓN,16,6.1875,2.585858585858586
 21,93093,Ricardo Ivan,Álvarez,FCFM,8,9.75,0.8205128205128205
@@ -79,16 +79,16 @@
 83,70358,Abigail,Contreras Mendoza,Matemáticas,47,8.1915,5.737654886162486
 84,131951,Alvaro Eduardo,Cordero Franco,FCFM UANL,3,7.6667,0.3913026465102326
 85,144561,Daniela,Cordero Rodríguez,FCFM/Arte 2d,2,10.0,0.2
-87,128482,Carlos Eduardo,Corpus Cardona,Deportivo - Ping Pong,1,10.0,0.1
-88,129298,Carlos Eduardo,Corpus Cardona,FCFM/ Cálculo de Varias Variables ,1,10.0,0.1
-89,129300,Carlos Eduardo,Corpus Cardona,UANL-FCFM,6,9.8333,0.610171559903593
+86,129298,Carlos Eduardo,Corpus Cardona,FCFM/ Cálculo de Varias Variables ,1,10.0,0.1
+87,129300,Carlos Eduardo,Corpus Cardona,UANL-FCFM,6,9.8333,0.610171559903593
+88,128482,Carlos Eduardo,Corpus Cardona,Deportivo - Ping Pong,1,10.0,0.1
 91,102084,Jose Carlos,Cuevas Beltran,FCFM,1,9.0,0.1111111111111111
 92,102083,Jose Carlos,Cuevas Beltran,Continuidad de Negocio,6,5.1667,1.1612828304333522
 93,129309,Damaris,Davila Soria,FCFM,7,9.0,0.7777777777777778
 94,62974,Heriberto,de la Cruz Sánchez,Telecomunicaciones,14,5.2143,2.6849241508927375
 97,107176,Homero Enrique,De la Fuente Garcia,FCFM/Matematicas,41,3.4878,11.755261196169505
-99,34766,Sofía Herminia,De La Paz,Zúñiga,72,4.0833,17.632797002424507
-100,114063,Sofía,De la paz,FCFM ,12,3.6667,3.272697520931628
+99,114063,Sofía,De la paz,FCFM ,12,3.6667,3.272697520931628
+100,34766,Sofía Herminia,De La Paz,Zúñiga,72,4.0833,17.632797002424507
 101,131956,Sofia Herminia,de la Paz Zuñiga,FCFM UANL,12,3.3333,3.600036000360004
 102,145326,Luz,De Leon,"FCFM ""Ciencias Computacionales""",17,6.2353,2.7264125222523377
 103,102706,Francisco,De Meneses,FCFM,18,6.0556,2.9724552480348767
@@ -107,8 +107,8 @@
 119,138518,Sandra Susana,Espinosa Regalado,Actuaría,2,5.0,0.4
 120,103101,Adolfo,Espinoza Cruz,UANL - FCFM - Actuaría,6,8.1667,0.7346908788127395
 121,127785,Brandon Emanuel,Espinoza Ramirez,LMAD,3,10.0,0.3
-122,113438,Julio,Estrada,FCFM/Fisica,8,8.125,0.9846153846153847
-123,103527,Rosa María,Estrada,FCFM-Fisica,16,8.5,1.8823529411764706
+122,103527,Rosa María,Estrada,FCFM-Fisica,16,8.5,1.8823529411764706
+123,113438,Julio,Estrada,FCFM/Fisica,8,8.125,0.9846153846153847
 124,149257,Ruben,Fernandez Jasso,LSTI,1,2.0,0.5
 125,113667,Adrian Israel,Flores,FCFM,7,5.1429,1.3610997686130393
 126,56565,Agustin,Flores Almaraz,FCFM,20,8.75,2.2857142857142856
@@ -161,7 +161,7 @@
 181,34765,Heriberto,González,Cásares,3,5.6667,0.5294086505373499
 182,102663,Omar,Gonzalez Amezcua,fisica,15,9.1333,1.6423417603713881
 183,56579,Osvaldo Habib,González González,Programación,39,7.7436,5.0364171703083835
-185,129469,Ceila Merari,González Hernández,FCFM,5,8.8,0.5681818181818181
+184,129469,Ceila Merari,González Hernández,FCFM,5,8.8,0.5681818181818181
 186,145596,Mario Alberto,González Medina,Fcfm,1,10.0,0.1
 187,102575,Luis Felipe,González Rivas,Matemáticas ,2,10.0,0.2
 188,138195,Brandon Alexis,Gonzalez Rivera,LMAD,2,9.0,0.2222222222222222
@@ -173,10 +173,10 @@
 194,56683,Nora,Grimaldo,FOGU/FCFM,26,4.0385,6.438033923486443
 195,121563,Brenda,Grimaldo,FCFM/ FOGU,13,6.6923,1.9425309684264005
 196,95109,María Esther,Grimaldo Reyna,FCFM,28,8.9643,3.1235009984047837
-197,111916,Claudio,guajardo,fcfm/telecomunicaciones,3,7.0,0.42857142857142855
-198,104279,Luis,Guajardo,Fcfm,3,7.6667,0.3913026465102326
-199,56421,Elizabeth,Guajardo,Matemáticas ll,43,9.6279,4.466186811246481
-200,123966,Elizabeth,Guajardo,Facultad Ciencias Fisico Matematico ,2,9.5,0.21052631578947367
+197,104279,Luis,Guajardo,Fcfm,3,7.6667,0.3913026465102326
+198,56421,Elizabeth,Guajardo,Matemáticas ll,43,9.6279,4.466186811246481
+199,123966,Elizabeth,Guajardo,Facultad Ciencias Fisico Matematico ,2,9.5,0.21052631578947367
+200,111916,Claudio,guajardo,fcfm/telecomunicaciones,3,7.0,0.42857142857142855
 201,149986,Abdiel Isaías,Guajardo Soto,FCFM,6,9.8333,0.610171559903593
 202,129284,Marcela,Guel,FCFM,2,8.0,0.25
 203,58948,Eric,Guerrero,Actuaría,9,8.2222,1.0945975529663592
@@ -190,8 +190,8 @@
 211,110890,Aldo Americo,Gutierrez Contreras,"UANL-FCFM(Modelado Organico,LMAD)",2,9.5,0.21052631578947367
 212,131954,Claudio Davet,Gutierrez Lazos,FCFM UANL,28,9.8929,2.830312648465061
 213,109771,Valentin,Guzman Ramos,FCFM/FISICA,18,6.0556,2.9724552480348767
-215,93020,Norberto,Hernandez,FCFM / ACTUARIA,3,9.3333,0.321429719391855
-216,112204,Roberto,Hernandez,UANL-FCFM(Matemáticas),6,8.8333,0.6792478462182877
+215,112204,Roberto,Hernandez,UANL-FCFM(Matemáticas),6,8.8333,0.6792478462182877
+216,93020,Norberto,Hernandez,FCFM / ACTUARIA,3,9.3333,0.321429719391855
 217,103669,Karla,Hernández,Física Básica,29,6.931,4.184100418410042
 218,132285,Gilda Paulina,Hernández Arevalo,FCFM,2,8.0,0.25
 219,62782,Jorge,Hernandez Baez,FCFM / LCC,18,6.5,2.769230769230769
@@ -201,8 +201,8 @@
 224,110639,Marissa Esmeralda,Hernandez Oyervides,"UANL-FCFM(Programacion,Base de Datos)",16,9.125,1.7534246575342465
 225,124423,Blanca Gisselle,Hernandez Robles,LSTI,2,9.5,0.21052631578947367
 226,110739,Jose Anastacio,Hernandez Saldaña,"UANL-FCFM(LCC-LSTI,Base de Datos,Teoria de Automat",14,7.0714,1.9798059790140567
-227,129278,Guadalupe,Hernandez Sanchez,Matemáticas ,16,7.0625,2.265486725663717
-228,129178,Guadalupe,Hernández Sánchez,Facultas de Ciencias Físico Matemáticas ,1,6.0,0.16666666666666666
+227,129178,Guadalupe,Hernández Sánchez,Facultas de Ciencias Físico Matemáticas ,1,6.0,0.16666666666666666
+228,129278,Guadalupe,Hernandez Sanchez,Matemáticas ,16,7.0625,2.265486725663717
 229,86182,Diana,Hernández Uresti,FCFM/UANL,6,3.6667,1.636348760465814
 230,102661,diana berenice,hernandez uresti,fcfm-uanl,15,4.6,3.2608695652173916
 231,108655,Rosa Isela,Hernandez Zamora,Actuaría,28,6.5,4.3076923076923075
@@ -247,13 +247,13 @@
 277,86234,Carlos,Luna Criado,FCFM,1,9.0,0.1111111111111111
 278,129296,Mayra Alejandra,Luna Peña,Físico Mate,10,9.7,1.0309278350515465
 279,118399,Gil Aleida,Magdalena,FCFM,8,9.375,0.8533333333333334
-280,57666,Juan Carlos,Maldonado,FCFM / Ingeniería Social,3,10.0,0.3
-281,93021,sayuri,maldonado,FCFM / ACTUARIA,6,9.1667,0.6545430743888204
+280,93021,sayuri,maldonado,FCFM / ACTUARIA,6,9.1667,0.6545430743888204
+281,57666,Juan Carlos,Maldonado,FCFM / Ingeniería Social,3,10.0,0.3
 282,100681,Salvador,Mancilla Hernández,FCFM,21,6.7619,3.1056359898845
 283,115661,Edgar,Marínez Guerra,FCFM,7,9.0,0.7777777777777778
-286,102830,David,Martinez,Matemáticas ,2,5.0,0.4
-287,132059,Yessica Marisol,Martínez,FCFM,1,9.0,0.1111111111111111
-288,118634,Emilio,Martinez,FCFM,3,9.3333,0.321429719391855
+286,132059,Yessica Marisol,Martínez,FCFM,1,9.0,0.1111111111111111
+287,118634,Emilio,Martinez,FCFM,3,9.3333,0.321429719391855
+288,102830,David,Martinez,Matemáticas ,2,5.0,0.4
 289,110408,Karen de Jesus,Martinez Acevedo,FCFM(Matematicas),12,9.9167,1.2100799661177608
 290,111102,Maria del Carmen,Martinez Cejudo,UANL-FCFM(Analisis Numerico),9,9.0,1.0
 291,78426,Martín,Martínez Domínguez,UANL- FCFM,13,7.8462,1.656852998903928
@@ -261,9 +261,9 @@
 293,62582,Laura Josefina,Martinez Flores,FCFM,43,6.0233,7.138943768366178
 294,110171,Atilano,Martinez Huerta,UANL-FCFM(Base de Datos),3,10.0,0.3
 295,110407,Leonardo Daniel,Martinez Lucio,FCFM(Matematicas),28,7.8571,3.5636558017589186
-297,59045,Miguel Ángel,Martínez Martínez,,6,9.0,0.6666666666666666
-298,59044,Miguel Ángel,Martínez Martínez,Gráficas/Modelado,3,9.0,0.3333333333333333
-299,124757,Miguel Angel,Martinez Martinez,UANL- FCFM,6,4.0,1.5
+297,59044,Miguel Ángel,Martínez Martínez,Gráficas/Modelado,3,9.0,0.3333333333333333
+298,124757,Miguel Angel,Martinez Martinez,UANL- FCFM,6,4.0,1.5
+299,59045,Miguel Ángel,Martínez Martínez,,6,9.0,0.6666666666666666
 300,85711,Patricia,Martínez Moreno,FCFM/LCC,4,9.5,0.42105263157894735
 301,147679,EVA MIRELLA,MARTINEZ RODRIGUEZ,FCFM,6,3.6667,1.636348760465814
 302,145637,Jesus Eduardo,Martínez Rodríguez,FCFM,5,6.6,0.7575757575757576
@@ -303,10 +303,10 @@
 340,110253,Ricardo,Obregón,Uanl fcfm,1,10.0,0.1
 341,83825,Sergio,Obregon,FCFM,16,9.8125,1.6305732484076434
 342,110404,Ricardo,Obregon Guerra,FCFM(Matematicas),3,3.6667,0.818174380232907
-343,109776,Maria de Jesus Antonia,Ochoa Oliva,FCFM/TELECOMUNICACIONES,7,7.5714,0.9245317906860027
+344,109776,Maria de Jesus Antonia,Ochoa Oliva,FCFM/TELECOMUNICACIONES,7,7.5714,0.9245317906860027
 345,82555,Juan René,Olivo González,UANL - FCFM/UDEM,3,9.6667,0.31034375743531917
 346,153163,Juan Antonio,Ordoñez Torres,fcfm,3,9.3333,0.321429719391855
-348,147655,Carlos Israel,Orta Orta,Profesor,1,8.0,0.125
+347,147655,Carlos Israel,Orta Orta,Profesor,1,8.0,0.125
 349,158315,Angela,Ortiz,FCFM,1,7.0,0.14285714285714285
 350,129384,Scarlett,Ortiz Ortiz,Cálculo diferencial,9,8.6667,1.03845754439406
 351,93359,Óscar de Jesús Trinidad,Ovalle Reyna,UANL - FCFM,2,10.0,0.2
@@ -332,16 +332,16 @@
 373,149179,Leopoldo César,Pompa Rodríguez,FCFM,2,10.0,0.2
 374,93022,daniel,prado,FCFM / ACTUARIA,18,9.1667,1.9636292231664612
 375,156863,Eric Armando,Pulido Pérez,FCFM/Maestro,2,8.5,0.23529411764705882
-377,110608,Jose de Jesus,Quijano Briones,UANL-FCFM(Fisica),6,3.8333,1.5652310020087132
-378,97501,jose de jesus,Quijano briones,FCFM GEOMETRIA ANALITICA,21,4.1905,5.011335162868392
+377,97501,jose de jesus,Quijano briones,FCFM GEOMETRIA ANALITICA,21,4.1905,5.011335162868392
+378,110608,Jose de Jesus,Quijano Briones,UANL-FCFM(Fisica),6,3.8333,1.5652310020087132
 379,107608,Diana Laura,Quintanar Sanchez,FCFM/Matematicas,25,7.04,3.5511363636363638
 380,119800,Diana Laura,Quintanar Sánchez,FCFM,5,7.6,0.6578947368421053
 381,104285,Mayra,Quiñonez,Lic Acturia,2,9.5,0.21052631578947367
 382,101941,Monica,Quiroga,FCFM,2,9.0,0.2222222222222222
 383,153056,Manuel Gerardo,Quiroz García,FCFM,2,7.0,0.2857142857142857
-384,60956,Yorch,Ramirez,ATI,1,10.0,0.1
+384,114825,PEDRO ANGEL,RAMIREZ,UANL-FCFM(MATEMÁTICAS),1,9.0,0.1111111111111111
 385,52629,Aurelio,Ramirez,Granados,7,4.2857,1.6333387777959258
-386,114825,PEDRO ANGEL,RAMIREZ,UANL-FCFM(MATEMÁTICAS),1,9.0,0.1111111111111111
+387,60956,Yorch,Ramirez,ATI,1,10.0,0.1
 388,85713,Erick Azael,Ramirez Aguilar,FCFM,11,7.0909,1.5512840401077437
 389,110702,David,Ramirez Lopez,UANL-FCFM(Programacion),13,10.0,1.3
 390,75186,Juan Angel,Ramirez Tamariz,FCFM/Ciencias computacionales,7,3.2857,2.1304440454088933
@@ -356,16 +356,16 @@
 399,102574,Azucena,Ríos,Estadística,12,9.0,1.3333333333333333
 400,129308,Jurgen,Rivelino Sandoval,FCFM/Actuaria,4,9.0,0.4444444444444444
 401,128141,Everardo,Rivera Oliva,Física,10,9.8,1.0204081632653061
-403,92297,Elisa,Rodriguez,UANL - FCFM,12,9.25,1.2972972972972974
-406,111661,FELIPE DE JESUS,RODRIGUEZ,UANL-FCFM(LCC),3,9.3333,0.321429719391855
-407,73401,Victoria Celeste,Rodriguez,matemáticas,43,8.3256,5.164792927837033
-408,92447,rodrigo,Rodríguez,fcfm,30,8.5333,3.5156387329638004
-409,34894,Panchito,Rodriguez,Matematicas/progra,28,7.0,4.0
-410,140085,David,Rodríguez Martínez,Fcfm,3,8.3333,0.36000144000576006
-411,144843,Rigoberto,Rodríguez Martínez,FCFM,24,9.625,2.4935064935064934
-412,155457,Gustavo Adolfo,Rodriguez Martinez,FCFM,2,10.0,0.2
+402,92297,Elisa,Rodriguez,UANL - FCFM,12,9.25,1.2972972972972974
+405,111661,FELIPE DE JESUS,RODRIGUEZ,UANL-FCFM(LCC),3,9.3333,0.321429719391855
+406,73401,Victoria Celeste,Rodriguez,matemáticas,43,8.3256,5.164792927837033
+407,92447,rodrigo,Rodríguez,fcfm,30,8.5333,3.5156387329638004
+408,34894,Panchito,Rodriguez,Matematicas/progra,28,7.0,4.0
+410,144843,Rigoberto,Rodríguez Martínez,FCFM,24,9.625,2.4935064935064934
+411,155457,Gustavo Adolfo,Rodriguez Martinez,FCFM,2,10.0,0.2
+412,140085,David,Rodríguez Martínez,Fcfm,3,8.3333,0.36000144000576006
 413,79073,Juan Jose,Rodriguez Padron,FCFM,9,8.5556,1.0519425873112347
-415,109813,Francisco,Rodríguez Ramírez,Fcfm,19,7.7368,2.4557956777996073
+414,109813,Francisco,Rodríguez Ramírez,Fcfm,19,7.7368,2.4557956777996073
 416,129297,Roberto Josafat,Rojas Solis,Programacion,1,8.0,0.125
 417,129291,Roberto Josafat,Rojas Solis,POO (LMAD),7,7.1429,0.9799941200352797
 418,97860,Esmeralda,Romero,FCFM / Matematicas discretas,11,8.8182,1.2474201084121477
@@ -384,8 +384,8 @@
 431,129314,María Guadalupe,Salas Zepeda,FCFM-UANL,2,7.0,0.2857142857142857
 432,74330,Guillermo,Salceda Delgado,UANL- FCFM,14,6.7143,2.085101946591603
 433,62785,Dilia María,Saldivar,Matemáticas,26,9.5769,2.714865979596738
-434,66983,Rene,Salinas,Ciencias Computacionales,5,6.6,0.7575757575757576
-435,86174,Monica,Salinas,FCFM,11,9.8182,1.1203682956142675
+434,86174,Monica,Salinas,FCFM,11,9.8182,1.1203682956142675
+435,66983,Rene,Salinas,Ciencias Computacionales,5,6.6,0.7575757575757576
 436,91658,Juan Pablo,Salinas Estebané,Mate-fisica ,14,7.7857,1.7981684370063065
 437,102659,juan pablo,salinas estevane,fcfm/física,3,6.6667,0.44999775001125
 438,80684,Magda,Sanchez,FCFM UANL,1,10.0,0.1
@@ -394,7 +394,7 @@
 442,132118,Victor Manuel,Sanchez Aguiñaga,Posgrado FCFM ,5,9.2,0.5434782608695653
 443,129301,Víctor Manuel,Sánchez Aguiñaga,FCFM,1,9.0,0.1111111111111111
 444,146551,Carolina Ruby García,Sanchez Armass,FCFM,1,5.0,0.2
-448,104276,María del Rosario,Sánchez García,FCFM,1,9.0,0.1111111111111111
+447,104276,María del Rosario,Sánchez García,FCFM,1,9.0,0.1111111111111111
 449,129407,Reyna Berenice,Sanchez Hernandez,FCFM/ACTUARÍA,3,8.3333,0.36000144000576006
 450,56302,Blanca Patricia,Sánchez Juárez,Circuitos Digitales,50,5.54,9.025270758122744
 451,110741,Romeo Alfonso,Sanchez Lopez,UANL-FCFM(LSTI-Seguridad en Desarrollo de Software,11,9.8182,1.1203682956142675
@@ -434,7 +434,7 @@
 487,107550,Diana,Torres Valdes,FCFM,4,9.0,0.4444444444444444
 488,155252,Cathy Elizabeth,Trejo Robles,FCFM,2,10.0,0.2
 489,56304,Janell,Treviño,"Diseño de Escenarios, Foto.",4,4.25,0.9411764705882353
-490,129579,Norma Jeaneth,Treviño Hernández,UANL-FCFM,4,6.5,0.6153846153846154
+491,129579,Norma Jeaneth,Treviño Hernández,UANL-FCFM,4,6.5,0.6153846153846154
 492,68752,José Alejandro,Treviño Lavin,FCFM,5,5.0,1.0
 493,151624,Mónica Cristina,Treviño Navarro,FCFM/Actuaria,2,2.0,1.0
 494,113192,Gerardo Manuel,Valdes Macias,FCFM/LCC,2,8.0,0.25
@@ -456,8 +456,8 @@
 511,99729,Perla,Viera,Fisica,16,8.5,1.8823529411764706
 512,133898,Perla Marlene,Viera González,Fcfm,4,10.0,0.4
 513,129304,Arturo,Villalobos Gonzalez,FCFM LABORATORIOS,9,6.8889,1.3064495057266037
-514,121550,Rosa Nelly,Villareal,FCFM / LSTI (Profesora),5,8.8,0.5681818181818181
-515,129286,Alejandro,Villareal,FCFM,17,3.8824,4.378734803214506
+514,129286,Alejandro,Villareal,FCFM,17,3.8824,4.378734803214506
+515,121550,Rosa Nelly,Villareal,FCFM / LSTI (Profesora),5,8.8,0.5681818181818181
 516,79063,Alejandro,Villarreal Mojica,FCFM BDPM/Progra2,36,3.6111,9.969261443881367
 518,128837,Fisam,Zavala,Fcfm/Actuaria ,9,9.6667,0.9310312723059575
 519,153396,MIGUEL ANGEL,ZAVALA VIZCAYA,FCFM/LCC	,1,8.0,0.125
