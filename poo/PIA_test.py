@@ -12,7 +12,7 @@ import re
 import pandas as pd
 
 URl = "https://www.misprofesores.com/escuelas/UANL-FCFM_2263"
-page = requests.get(URl, verify = False)
+page = requests.get(URl, verify = True)
 
 soup = bs(page.content, "html.parser")
 raw_json = soup.find_all('script', type = 'text/javascript')
