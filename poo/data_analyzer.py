@@ -7,6 +7,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import html_to_dataframe as td
 import numpy as np
+from datetime import date
 
 #Clases
 class table():
@@ -72,5 +73,12 @@ def data_analyzer():
     resultados_min = resultados_min.sort_values(by = 'Promedio')
 
     final_results = results(resultados_min, resultados_max)
-    
+
+    today_date = str(date.today())
+
+    df.to_csv('fcfm_data_' + today_date + '.csv')
+
     return final_results
+
+#if __name__ == "__main__":
+    #data_analyzer()
