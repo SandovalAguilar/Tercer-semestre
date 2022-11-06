@@ -18,14 +18,10 @@ class table():
 
 class results():
 
-    def __init__(self, min_table, max_table):
+    def __init__(self, min_table, max_table, full_table):
         self.min_table = min_table
         self.max_table = max_table
-
-    def display_all(self):
-        print(self.min_table)
-        print('\n')
-        print(self.max_table)
+        self.full_table = full_table
 
 #Programa principal
 def data_analyzer():
@@ -72,11 +68,11 @@ def data_analyzer():
     resultados_min = resultados_min.sort_values(by = "Razon", ascending = False).reset_index(drop = True).head(10)
     resultados_min = resultados_min.sort_values(by = 'Promedio')
 
-    final_results = results(resultados_min, resultados_max)
+    final_results = results(resultados_min, resultados_max, df)
 
     today_date = str(date.today())
 
-    df.to_csv('fcfm_data_' + today_date + '.csv')
+    # df.to_csv('fcfm_data_' + today_date + '.csv')
 
     return final_results
 
