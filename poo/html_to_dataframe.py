@@ -2,14 +2,14 @@
 file -- table_to_dataframe.py -- 
 '''
 
-#Liberias necesarias
+# Liberias necesarias
 import requests 
 from bs4 import BeautifulSoup as bs
 import json
 import re
 import pandas as pd
 
-#Clases
+# Clases
 class website: 
 
     site_name = "Mis Profesores"
@@ -18,7 +18,7 @@ class website:
         self.URL = URL
         self.facultad = facultad
 
-#Programa principal
+# Programa principal
 def to_dataframe(URL_site, facultad):
 
     #URL_site = "https://www.misprofesores.com/escuelas/UANL-FCFM_2263"
@@ -35,7 +35,7 @@ def to_dataframe(URL_site, facultad):
 
     return df
 
-#Este apartado solo debe utilizarse para realizar pruebas individuales del modulo
+# Este apartado solo debe utilizarse para realizar pruebas individuales del modulo
 '''
 if __name__ == "__main__":
     

@@ -2,7 +2,7 @@
 file -- to_csv.py -- 
 '''
 
-#Librerias y modulos necesarios
+# Librerias y modulos necesarios
 import pandas as pd
 from datetime import date
 from pathlib import Path
@@ -18,7 +18,7 @@ def to_csv(df, facultad):
 
     print("Archivo creado satisfactoriamente en la ruta " + script_path + " con la fecha: " + today_date)
 
-#Este apartado solo debe utilizarse para realizar pruebas individuales del modulo
+# Este apartado solo debe utilizarse para realizar pruebas individuales del modulo
 '''
 if __name__ == "__main__":
     
