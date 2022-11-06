@@ -4,10 +4,7 @@ file -- data_analyzer.py --
 
 #Librerias y modulos necesarios
 import pandas as pd
-import matplotlib.pyplot as plt
 import html_to_dataframe as td
-import numpy as np
-from datetime import date
 
 #Clases
 class table():
@@ -24,10 +21,11 @@ class results():
         self.full_table = full_table
 
 #Programa principal
-def data_analyzer():
-    URL_site = "https://www.misprofesores.com/escuelas/UANL-FCFM_2263"
-    df = table(td.to_dataframe(), URL_site)
+def data_analyzer(URL_site, facultad):
+    
+    df = table(td.to_dataframe(URL_site, facultad), URL_site)
 
+    # Nuevos nombres para las columnas
     new_names = {
         'i' : 'ID', 
         'n' : 'Nombre', 
@@ -39,6 +37,7 @@ def data_analyzer():
 
     df = df.table.rename(columns = new_names)
 
+    # Cambiar el tipo de variale
     new_types = {
         'ID' : 'int',
         '# de calif.' : 'int',
@@ -47,9 +46,11 @@ def data_analyzer():
 
     df = df.astype(new_types)
 
+    # Eliminar valores nulos
     null_values = df.loc[df["Promedio"].isnull()]
     df = df.dropna()
 
+    # Razon entre el numero de calif. y el promedio
     df['Razon'] = df['# de calif.'] / df['Promedio']
 
     resultados_max = df.loc[
@@ -70,11 +71,14 @@ def data_analyzer():
 
     final_results = results(resultados_min, resultados_max, df)
 
-    today_date = str(date.today())
-
-    # df.to_csv('fcfm_data_' + today_date + '.csv')
-
+    # Se retorna un objeto con los dataframes resultantes
     return final_results
 
-#if __name__ == "__main__":
-    #data_analyzer()
+#Este apartado solo debe utilizarse para realizar pruebas individuales del modulo
+'''
+if __name__ == "__main__":
+    
+    input_url = input()
+    nombre_facultad = input()
+    print(data_analyzer(input_url, nombre_facultad).full_table)
+'''

@@ -35,8 +35,10 @@ def to_dataframe(URL_site, facultad):
 
     return df
 
+#Este apartado solo debe utilizarse para realizar pruebas individuales del modulo
 '''
 if __name__ == "__main__":
+    
     input_url = input()
     nombre_facultad = input()
     print(to_dataframe(input_url, nombre_facultad))
