@@ -2,8 +2,10 @@
 file -- data_analyzer.py -- 
 '''
 
-# Librerias y modulos necesarios
+# Librerias
 import pandas as pd
+
+# Modulos
 import html_to_dataframe as td
 
 # Clases
@@ -15,9 +17,10 @@ class table():
 
 class results():
 
-    def __init__(self, min_table, max_table, full_table):
+    def __init__(self, min_table, max_table, describe_data ,full_table):
         self.min_table = min_table
         self.max_table = max_table
+        self.describe_data = describe_data
         self.full_table = full_table
 
 # Programa principal
@@ -68,11 +71,16 @@ def data_analyzer(URL_site, facultad):
         (df["# de calif."] > df["# de calif."].mean()) & 
         (df['Razon'] > df['Razon'].mean())]
 
+
     resultados_min = resultados_min.sort_values(by = "Razon", ascending = False).reset_index(drop = True).head(10)
     resultados_min = resultados_min.sort_values(by = 'Promedio')
 
+    # Estadistica descriptiva
+
+    describe_data = df[['# de calif.', 'Promedio', 'Razon']].describe()
+
     # Se retorna un objeto con los dataframes resultantes
-    final_results = results(resultados_min, resultados_max, df)
+    final_results = results(resultados_min, resultados_max, describe_data, df)
 
     return final_results
 

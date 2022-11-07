@@ -2,10 +2,12 @@
 file -- to_csv.py -- 
 '''
 
-# Librerias y modulos necesarios
+# Librerias 
 import pandas as pd
 from datetime import date
 from pathlib import Path
+
+# Modulos
 import data_analyzer as da
 import html_to_dataframe as td
 
