@@ -22,9 +22,38 @@ import html_to_dataframe as td
 import data_analyzer as da
 import to_csv as tc
 
+#Comprobacion de URL
+def validate_url():
+
+    aux = True
+
+    while aux == True:
+        print('\n ===========[INGRESAR UNA URL VALIDA]=============')
+        print('  --------------------------------------')
+
+        input_url = input()
+
+        print('\n ===========[INGRESAR EL NOMBRE DE LA FACULTAD]=============')
+        print('  --------------------------------------')
+
+        input_facultad = input()
+
+        try:
+            df = da.data_analyzer(input_url, input_facultad)
+        except:
+            print("URL NO VALIDA")
+            continue
+
+        aux = False
+
+    return df
+
+
 # Programa principal
 def main():
-    pass
+
+    validate_url()
+
 
 if __name__ == "__main__":
     main()
