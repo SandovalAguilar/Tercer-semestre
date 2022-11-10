@@ -2,26 +2,27 @@
 file -- table_to_dataframe.py -- 
 '''
 
-#Liberias necesarias
+# Liberias
 import requests 
 from bs4 import BeautifulSoup as bs
 import json
 import re
 import pandas as pd
 
-#Clases
+# Clases
 class website: 
 
     site_name = "Mis Profesores"
-    def __init__(self, apartado, URL):
+    def __init__(self, apartado, URL, facultad):
         self.section = apartado
         self.URL = URL
+        self.facultad = facultad
 
-#Programa principal
-def to_dataframe():
+# Programa principal
+def to_dataframe(URL_site, facultad):
 
-    URL_site = "https://www.misprofesores.com/escuelas/UANL-FCFM_2263"
-    site = website("table", URL_site)
+    #URL_site = "https://www.misprofesores.com/escuelas/UANL-FCFM_2263"
+    site = website("table", URL_site, facultad)
     
     html = requests.get(site.URL, verify = True)
     soup = bs(html.content, "html.parser")
@@ -32,7 +33,13 @@ def to_dataframe():
     
     df = pd.json_normalize(str_to_json)
 
-
     return df
 
-
+# Este apartado solo debe utilizarse para realizar pruebas individuales del modulo
+'''
+if __name__ == "__main__":
+    
+    input_url = input()
+    nombre_facultad = input()
+    print(to_dataframe(input_url, nombre_facultad))
+'''

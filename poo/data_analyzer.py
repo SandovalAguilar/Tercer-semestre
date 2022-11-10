@@ -2,14 +2,13 @@
 file -- data_analyzer.py -- 
 '''
 
-#Librerias y modulos necesarios
+# Librerias
 import pandas as pd
-import matplotlib.pyplot as plt
-import html_to_dataframe as td
-import numpy as np
-from datetime import date
 
-#Clases
+# Modulos
+import html_to_dataframe as td
+
+# Clases
 class table():
 
     def __init__(self, table, URL_source):
@@ -18,20 +17,18 @@ class table():
 
 class results():
 
-    def __init__(self, min_table, max_table):
+    def __init__(self, min_table, max_table, describe_data ,full_table):
         self.min_table = min_table
         self.max_table = max_table
+        self.describe_data = describe_data
+        self.full_table = full_table
 
-    def display_all(self):
-        print(self.min_table)
-        print('\n')
-        print(self.max_table)
+# Programa principal
+def data_analyzer(URL_site, facultad):
+    
+    df = table(td.to_dataframe(URL_site, facultad), URL_site)
 
-#Programa principal
-def data_analyzer():
-    URL_site = "https://www.misprofesores.com/escuelas/UANL-FCFM_2263"
-    df = table(td.to_dataframe(), URL_site)
-
+    # Nuevos nombres para las columnas
     new_names = {
         'i' : 'ID', 
         'n' : 'Nombre', 
@@ -43,6 +40,7 @@ def data_analyzer():
 
     df = df.table.rename(columns = new_names)
 
+    # Cambiar el tipo de variale
     new_types = {
         'ID' : 'int',
         '# de calif.' : 'int',
@@ -51,11 +49,14 @@ def data_analyzer():
 
     df = df.astype(new_types)
 
+    # Eliminar valores nulos
     null_values = df.loc[df["Promedio"].isnull()]
     df = df.dropna()
 
+    # Razon entre el numero de calif. y el promedio
     df['Razon'] = df['# de calif.'] / df['Promedio']
 
+    # Top profesores con mayores reseñas
     resultados_max = df.loc[
         (df["Promedio"] > df["Promedio"].mean()) & 
         (df["# de calif."] > df["# de calif."].mean()) & 
@@ -64,21 +65,34 @@ def data_analyzer():
     resultados_max = resultados_max.sort_values(by = "Razon", ascending = False).reset_index(drop = True).head(10)
     resultados_max = resultados_max.sort_values(by = 'Promedio', ascending = False).reset_index(drop = True).head(10)
 
+    # Top profesores con menores reseñas
     resultados_min = df.loc[
         (df["Promedio"] < df["Promedio"].mean()) & 
         (df["# de calif."] > df["# de calif."].mean()) & 
         (df['Razon'] > df['Razon'].mean())]
 
+
     resultados_min = resultados_min.sort_values(by = "Razon", ascending = False).reset_index(drop = True).head(10)
     resultados_min = resultados_min.sort_values(by = 'Promedio')
 
-    final_results = results(resultados_min, resultados_max)
+    # Estadistica descriptiva
 
-    today_date = str(date.today())
+    describe_data = df[['# de calif.', 'Promedio', 'Razon']].describe()
 
+<<<<<<< HEAD
     
+=======
+    # Se retorna un objeto con los dataframes resultantes
+    final_results = results(resultados_min, resultados_max, describe_data, df)
+>>>>>>> f581e735afeceb8134759f970bc33cdb8c9288a7
 
     return final_results
 
-#if __name__ == "__main__":
-    #data_analyzer()
+# Este apartado solo debe utilizarse para realizar pruebas individuales del modulo
+'''
+if __name__ == "__main__":
+    
+    input_url = input()
+    nombre_facultad = input()
+    print(data_analyzer(input_url, nombre_facultad).full_table)
+'''
