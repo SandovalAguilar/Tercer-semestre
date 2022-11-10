@@ -76,7 +76,7 @@ def data_analyzer():
 
     today_date = str(date.today())
 
-    df.to_csv('fcfm_data_' + today_date + '.csv')
+    
 
     return final_results
 
