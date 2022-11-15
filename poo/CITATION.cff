@@ -1,0 +1,9 @@
+authors:
+  - family-names: Sandoval
+    given-names: Ismael
+  - family-names: Saldaña
+    given-names: Iván
+
+cff-version: 1.2.0
+title: "Extraccion de Datos en servicio web misprofes.com"
+repository-code: "https://github.com/SandovalAguilar/Tercer-semestre/tree/main/poo"
