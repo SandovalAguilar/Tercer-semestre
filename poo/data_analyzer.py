@@ -79,12 +79,8 @@ def data_analyzer(URL_site, facultad):
 
     describe_data = df[['# de calif.', 'Promedio', 'Razon']].describe()
 
-<<<<<<< HEAD
-    
-=======
     # Se retorna un objeto con los dataframes resultantes
     final_results = results(resultados_min, resultados_max, describe_data, df)
->>>>>>> f581e735afeceb8134759f970bc33cdb8c9288a7
 
     return final_results
 
